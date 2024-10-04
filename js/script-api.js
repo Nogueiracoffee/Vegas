@@ -97,31 +97,34 @@ $(window).on('load', function () {
 
   $(".preloader").delay(1000).fadeOut("slow");
 
-  // Parallax
-  if ($('.parallax-background').length) {
-      $(".parallax-background").parallax();
-  }
+  $(document).ready(function() {
+    // Parallax - apenas em dispositivos não móveis
+    if ($('.parallax-background').length && !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        $(".parallax-background").parallax();
+    }
 
-  // Parallax
-  if ($('.parallax-background-partners').length) {
-      $(".parallax-background-partners").parallax();
-  }
+    if ($('.parallax-background-partners').length && !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        $(".parallax-background-partners").parallax();
+    }
 
-  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-      $(".footer").css("position", "relative");
-      $(".contact").css("marginBottom", "0");
-  } else {
-      // FadeTo elements
-      if ($(window).width() > 1023) {
-          var tiles = $("h2, h3, .column-one, .column-two, .column-three, .grid li, .contact .content .form, .contact .content .contact-text").fadeTo(0, 0);
+    // Configurações específicas para dispositivos móveis
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        $(".footer").css("position", "relative");
+        $(".contact").css("marginBottom", "0");
+        // Adicionando uma classe para desabilitar o parallax em dispositivos móveis
+        $("body").addClass("no-parallax");
+    } else {
+        // FadeTo elements
+        if ($(window).width() > 1023) {
+            var tiles = $("h2, h3, .column-one, .column-two, .column-three, .grid li, .contact .content .form, .contact .content .contact-text").fadeTo(0, 0);
 
-          $(window).scroll(function () {
-              tiles.each(function () {
-                  var a = $(this).offset().top + $(this).height();
-                  var b = $(window).scrollTop() + $(window).height();
-                  if (a < b) $(this).fadeTo(1000, 1);
-              });
-          });
-      }
-  }
+            $(window).scroll(function () {
+                tiles.each(function () {
+                    var a = $(this).offset().top + $(this).height();
+                    var b = $(window).scrollTop() + $(window).height();
+                    if (a < b) $(this).fadeTo(1000, 1);
+                });
+            });
+        }
+    }
 });
