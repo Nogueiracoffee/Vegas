@@ -194,67 +194,6 @@ h1 span{
 }
 
 
-/* Menu mobile */
-
-.menu-media{
-  position:relative;
-  width:100%;
-  height:90px;
-  background:#ada074;
-  z-index:1000;
-  display:none;
-}
-
-.menu-media .menu-content{
-  width:280px;
-  position:relative;
-  margin:0 auto;
-}
-
-.menu-media .menu-content .logo {
-   color:white;
-   font-weight:700;
-   font-size:24px;
-   width:200px;
-   line-height:90px;
-   float:left;
-   list-style: none;
-}
-
-.menu-media .menu-content .icon{
-  width:41px;
-  height:23px;
-  float:right;
-  line-height:100px;
-}
-
-.menu-click{
-  display:none;
-}
-
-
-.menu-click li {
-  position:relative;
-  width:100%;
-  height:70px;
-  color:#333333;
-  font-size:18px;
-  text-align:center;
-  line-height:70px;
-  z-index:1000;
-  border-bottom:1px solid #f2f2f2;
-  -webkit-transition: all 0.2s ease-in;
-	-moz-transition: all 0.2s ease-in;
-	-ms-transition: all 0.2s ease-in;
-	-o-transition: all 0.2s ease-in;
-	transition: all 0.2s ease-in;
- }
-
-.menu-click li:hover {
-  color:#ada074;
- }
-
-
 /* Menu */
 
 .menu{
@@ -448,7 +387,7 @@ h1 span{
   border:0;
 }
 
-
+/* Portfolio grid */
 
 
 .grid {
@@ -586,12 +525,6 @@ h1 span{
 
 .partners .logo img:hover{
   opacity:1;
-}
-
-
-strong{
-  font-weight:700;
-
 }
 
 /* Contact */
