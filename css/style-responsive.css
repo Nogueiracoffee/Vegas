@@ -22,95 +22,6 @@
 }
 
 
-h1 {
-  font-size:36px;
-}
-
-.about-us h1 {
-  margin-top:0;
-}
-
-.about-us .content{
-  width:300px;
-}
-
-.about-us hr,.portfolio .portfolio-margin hr, .contact hr {
-  width:106px;
-}
-
-.about-us .column-one, .about-us .column-two{
-  width:300px;
-  margin-bottom:20px;
-}
-
- .about-us .content .column-three{
-  width:300px;
-  margin-bottom:70px;
- }
-
-.portfolio .portfolio-margin{
-  width:300px;
-}
-
-.partners .content{
-  width:300px;
-}
-
-.partners .logo {
-  width:300px;
-}
-
-.partners .logo img {
-  width:80px;
-  padding-bottom:20px;
-}
-
-.contact, .contact .content, .contact .content .form{
-  width:300px;
-}
-
-.contact .content .contact-text{
-  padding-left:0px;
-  width:300px;
-  text-align:center;
-  margin-top:60px;
-}
-
-input{
-  width:320px;
-}
-
-textarea{
-  width:320px;
-}
-
-.contact .content .contact-text {
-  width:275px;
-}
-
-.contact .content .form .column, .contact .content .form .column-3{
-  width:320px;
-}
-
-.contact .content .form .column-2{
-  width:320px;
-  padding-left:0;
-}
-
-.grid li{
-  margin:0 0 15px 0;
-}
-
-.contact{ 
-  margin:0 auto;
-}
-
-.footer{
-  position:relative;
-}
-
-}
-
 
 
 /* iPad (portrait) */
@@ -144,33 +55,6 @@ textarea{
   width:300px;
 }
 
-
-h1 {
-  font-size:36px;
-}
-
-.about-us h1 {
-  margin-top:0;
-}
-
-.about-us .content{
-  width:300px;
-}
-
-.about-us hr,.portfolio .portfolio-margin hr, .contact hr {
-  width:106px;
-}
-
-.about-us .column-one, .about-us .column-two{
-  width:300px;
-  margin-bottom:20px;
-}
-
- .about-us .column-three{
-  width:300px;
-  margin-bottom:70px;
- }
-
 .portfolio .portfolio-margin{
   width:300px;
 }
@@ -187,56 +71,6 @@ h1 {
   width:80px;
   padding-bottom:20px;
 }
-
-.contact, .contact .content, .contact .content .form{
-  width:300px;
-}
-
-.contact .content .contact-text{
-  padding-left:0px;
-  width:300px;
-  text-align:center;
-  margin-top:60px;
-}
-
-.contact .content .contact-text {
-  width:275px;
-}
-
-.contact .content .form .column, .contact .content .form .column-3{
-  width:420px;
-}
-
-.contact .content .form .column-2{
-  width:420px;
-  padding-left:0;
-}
-
-.contact{ 
-  margin:0 auto;
-}
-
-.footer{
-  position:relative;
-}
-
-input{
-  width:420px;
-}
-
-textarea{
-  width:420px;
-}
-
-
-}
-
-
-
-
-
-
-
 
 
 
@@ -288,44 +122,4 @@ textarea{
 
 .partners .logo {
   width:700px;
-}
-
-.contact{ 
-  margin:0 auto;
-}
-
-.contact .content {
-  width:700px
-}
-
-.footer{
-  position:relative;
-}
-
-.contact .content .form{
-  width:355px;
-}
-
-input{
-  width:320px;
-}
-
-textarea{
-  width:320px;
-}
-
-.contact .content .contact-text {
-  width:275px;
-}
-
-.contact .content .form .column, .contact .content .form .column-3{
-  width:450px;
-}
-
-.contact .content .form .column-2{
-  width:450px;
-  padding-left:0;
-}
-
-
 }
