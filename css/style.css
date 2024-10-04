@@ -529,13 +529,12 @@ h1 span{
 
 /* Contact */
 
-.contact{
-  position:relative;
-  width:100%;
-  background:white;
-  z-index:10;
-  overflow:hidden;
-  margin-bottom: 300px;  
+.contact {
+  position: relative;
+  width: 100%;
+  background: white;
+  z-index: 10;
+  margin-bottom: 0; /* Removido para evitar que o conteúdo seja empurrado para fora */
 }
 
 .contact .content{
@@ -633,10 +632,6 @@ h1 span{
   border-radius: 100px;
   width: 100px;
   cursor:pointer;
-    -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
 
@@ -704,6 +699,13 @@ h1 span{
 
 .contact .column-three .circle-three:hover{ 
   border:2px solid #ada074;
+}
+
+/* Clearfix para corrigir o problema de layout */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 
