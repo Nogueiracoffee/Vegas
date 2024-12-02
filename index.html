@@ -120,7 +120,7 @@
             </div>
         </div>
     </section>
-    <section class="footer">
+
         <!-- Section contact -->
     <section class="contact" id="contact">
         <div class="content">
@@ -141,7 +141,6 @@
             </div>
         </div>
     </section>
-</section>  
     
 
     <!-- Modal -->
@@ -171,6 +170,19 @@
     <script src="js/jquery.sticky.js"></script>
     <script src="js/masonry.pkgd.min.js"></script>
     <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script>
+        $(function(){
+      
+          var $container = $('.grid');
+        
+          $container.imagesLoaded( function(){
+            $container.masonry({
+              itemSelector : 'li'
+            });
+          });
+        
+        });
+      </script>
     <script src="js/jquery.parallax.js"></script>
     <script src="js/script.js"></script>
     <script src="js/janela.js"></script>
