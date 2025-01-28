@@ -455,7 +455,7 @@ h1 span{
   .grid img, .grid .text, .grid .no-text {
     width: 100%;
   }
-}
+
 
 @media (min-width: 512px) {
   .grid li {
