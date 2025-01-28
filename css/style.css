@@ -535,4 +535,10 @@ strong{
 
 }
 
+@media (max-width: 767px) {
+  .contact {
+    background-attachment: scroll; /* Desabilita o efeito fixo no Android */
+  }
+}
+
 
