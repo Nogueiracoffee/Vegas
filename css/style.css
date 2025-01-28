@@ -469,7 +469,7 @@ h1 span{
 
 /* Partners */
 
-.partners{
+.contact{
   position:relative;
   width:100%;
   z-index:10;
@@ -481,14 +481,14 @@ h1 span{
   background-size: cover;
 }
 
-.partners .opacity{
+.contact .opacity{
   position:absolute;
   width:100%;
   height:400px;
   background:rgba(79,79,79,0.6);
 }
 
-.partners .content{
+.contact .content{
   position:absolute;
   width:900px;
   height:190px;
@@ -497,9 +497,10 @@ h1 span{
   bottom:0;
   left:0;
   right:0;
+  overflow: hidden;
 }
 
-.partners h2{
+.contact h2{
   color:white;
   letter-spacing:1px;
   font-size:32px;
@@ -507,7 +508,7 @@ h1 span{
   text-align:center;
 }
 
-.partners .logo{
+.contact .logo{
   position:relative;
   width:900px;
   overflow:hidden;
@@ -515,7 +516,7 @@ h1 span{
   text-align:center;
 }
 
-.partners .logo img{
+.contact .logo img{
   opacity:0.5;
   -webkit-transition: all 0.2s ease-in;
 	-moz-transition: all 0.2s ease-in;
@@ -524,7 +525,7 @@ h1 span{
 	transition: all 0.2s ease-in;
 }
 
-.partners .logo img:hover{
+.contact .logo img:hover{
   opacity:1;
 }
 
